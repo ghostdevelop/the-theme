@@ -1,0 +1,64 @@
+/*#####################
+	PORTAL-FOOTER
+#####################*/
+#portal-footer{
+}
+
+#portal-footer .container.footer-sidebar{
+	border-top: 3px solid #333;
+}
+
+#portal-footer .container.footer{
+	border-top: 1px solid #ccc;
+	line-height: 100px;	
+}
+
+#portal-footer .container .block-logo,
+#portal-footer .container .block-copyright{
+	float: left;
+	margin-right: 40px;
+	
+}
+
+#portal-footer .container .block-social{
+	float: right;
+	margin-top: 30px;
+}
+
+#portal-footer .container .block-social ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#portal-footer .container .block-social ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+#portal-footer .container .block-social ul li a{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	-webkit-transition: background 0.2s ease;
+	-moz-transition: background 0.2s ease;
+	-ms-transition: background 0.2s ease;
+	-o-transition: background 0.2s ease;
+	transition: background 0.2s ease;
+	border-radius: 20px;	
+}
+
+#portal-footer .container .block-social ul li a:hover{
+    border-color:rgba(0,0,0,0.5);	
+	background: #02afff;
+	color: white;    	
+}
+
+
+
+
+
+
+

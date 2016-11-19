@@ -1,0 +1,114 @@
+/*#####################
+	PORTAL-HEADER
+#####################*/
+.portal-header .container.top{
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;	
+}
+
+.portal-header .container.menu{
+	padding: 25px 30px;
+	border-bottom: 3px solid #333;	
+	position: relative;
+}
+
+.portal-header .container.top .block-date{
+	float: left;
+}
+
+.portal-header .container.top .block-search{
+	float: right;
+	border-right: 1px solid #ccc;
+	padding-right: 10px;	
+}
+
+.portal-header .container.top .block-register{
+	float: right;
+}
+
+.portal-header .container.top .block-register ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.portal-header .container.top .block-register ul li{
+	float: left;
+	margin: 0 10px;
+	line-height: 30px;
+}
+
+.portal-header .container.menu .block-logo{
+	float: left;
+}
+
+.portal-header .container.menu .block-menu{
+	float: left;
+	position: absolute;
+	bottom: 48px;
+	left: 300px;
+}
+
+.portal-header .container.menu .block-menu ul,
+.portal-header .container.menu .block-social ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.portal-header .container.menu .block-social ul{
+	line-height: 60px;
+}
+
+.portal-header .container.menu .block-menu ul li,
+.portal-header .container.menu .block-social ul li{
+	float: left;
+	display: inline-block;
+}
+
+.portal-header .container.menu .block-social ul li{
+	margin: 0 10px;
+}
+
+.portal-header .container.menu .block-menu ul li a{
+	padding: 20px 20px 50px;
+}
+
+.portal-header .container.menu .block-menu ul li a:hover{
+	border-bottom: 3px solid #02afff;	
+}
+
+.portal-header .container.menu .block-social{
+	float: right;
+	margin-top: 10px;	
+}
+
+.portal-header .container.menu .block-social ul li a{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	-webkit-transition: background 0.2s ease;
+	-moz-transition: background 0.2s ease;
+	-ms-transition: background 0.2s ease;
+	-o-transition: background 0.2s ease;
+	transition: background 0.2s ease;
+    border-radius: 20px;
+}
+
+.portal-header .container.menu .block-social ul li a:hover{
+    border-color:rgba(0,0,0,0.5);	
+	background: #02afff;
+	color: white;    
+}
+
+.portal-header .container.top .block-search .search-field,
+.portal-header .container.top .block-search .search-submit{
+	position:relative;
+	background: none;
+	border: none;	
+}
+
+
