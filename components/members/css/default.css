@@ -1,0 +1,88 @@
+.members{
+	display: block;
+}
+
+.members ul.members-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;	
+}
+
+.members ul.members-list li{
+	margin: 20px;
+	position: relative;
+	overflow: hidden;	
+}
+
+.members ul.members-list li .caption{
+	display: block;
+	width: 100%;
+	line-height: 40px;	
+	margin-bottom: 10px;	
+}
+
+.members ul.members-list li .caption h5{
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.members ul.members-list li .caption .more{
+	position: absolute;
+	color: #efefef;
+	margin-top: 10px;		
+	width: 100%;
+	line-height: 20px;	
+	display: block;
+	text-align: center;
+}
+
+.members ul.members-list li .caption .more a{
+	color: #efefef;
+	font-size: 16px;
+	margin-right: 20px;
+	width: 40px;
+	height: 40px;
+	background: #333;
+	line-height: 40px;
+	border-radius: 40px;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;		
+}
+
+.members ul.members-list li .caption .more a:hover{
+	color: #333;	
+	background: #efefef;
+}
+
+.members ul.members-list li .caption .more{
+	display: block;
+	float: left;
+}
+
+.members ul.members-list li .caption span{
+	text-align: center;
+	line-height: 20px;		
+	color: #efefef;
+	display: block;
+}
+
+.members ul.members-list li .caption{
+	position: absolute;
+	bottom: 0;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;	
+}
+
+.members ul.members-list li:hover .caption{
+	bottom: 50px;	
+}

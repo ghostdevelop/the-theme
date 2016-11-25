@@ -4,9 +4,15 @@
 	    class GoogleMapFeed extends Component{
 	    	var $locations = array();
 	    	
-	    	function load(){
+	    	function load($footer = false){
 				wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAMJwJDzVaVBt0jK1Vi3AbRKao54Cu9Ne0', array('jquery'), '1.0.0', true );
 				$this->get_script('gMap', '/js/jquery.gMap.min.js');
+				if (isset($this->options['map_style'])){
+					$this->get_script($this->id . 'style', '/js/' . $this->options['map_style'] .'.js');	
+				} else {
+					$this->get_script($this->id . 'style', '/js/default-style.js');	
+				}
+				
 		    	parent::load();
 		    	
 		    	
@@ -28,12 +34,17 @@
 			
 		    function create_js_options(){
 			    $options = parent::create_js_options();
-			    $this->populate_locations($this->options['query']);		    
-			    $options['locations'] = $this->locations;
+			    
+			    if (isset($this->options['query'])){  
+			    	$this->populate_locations($this->options['query']);		    
+					$options['locations'] = $this->locations;
+			    } elseif (isset($this->options['locations'])) {
+				    $options['locations'] = $this->options['locations'];
+			    }
 			    
 			    return $options;
 
-		    }			
+		    }	    		
 		    
 		}
 		

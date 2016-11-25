@@ -12,7 +12,7 @@
     <div class="container-fluid">
 	    <div class="container footer">
 		    <div class="block-logo">
-			    <img src="http://ld-wp.template-help.com/wordpress_58404_v3/wp-content/themes/king-news/assets/images/logo.png" />
+			    <img src="<?php echo get_option('logo')?>" />
 		    </div>    
 	        <div class="block-copyright">    
 				© 2016 News King, Inc. All Rights Reserved. 

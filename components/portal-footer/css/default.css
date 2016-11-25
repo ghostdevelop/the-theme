@@ -2,6 +2,7 @@
 	PORTAL-FOOTER
 #####################*/
 #portal-footer{
+	margin-bottom: 20px;
 }
 
 #portal-footer .container.footer-sidebar{
@@ -11,13 +12,17 @@
 #portal-footer .container.footer{
 	border-top: 1px solid #ccc;
 	line-height: 100px;	
+	height: 100px;	
 }
 
 #portal-footer .container .block-logo,
 #portal-footer .container .block-copyright{
 	float: left;
 	margin-right: 40px;
-	
+}
+
+#portal-footer .container .block-logo img{
+	max-height: 100%;
 }
 
 #portal-footer .container .block-social{

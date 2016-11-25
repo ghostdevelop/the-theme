@@ -15,11 +15,11 @@
 		    	$this->load();    	    	
 		    }
 		    
-		    function load(){
-				$this->get_style($this->id, '/css/' . $this->style);
-				$this->get_script($this->id, '/js/' . $this->type . '.js');				    
-				
-				if (!empty($this->js_options)) wp_localize_script( $this->id, 'options', $this->js_options );
+		    function load($footer = false){
+					$this->get_style($this->id, '/css/' . $this->style);
+					$this->get_script($this->id, '/js/' . $this->type . '.js', $footer);				    
+
+					if (!empty($this->js_options)) wp_localize_script( $this->id, get_class($this), $this->js_options );
 		    }
 		    
 		    function create_js_options(){
@@ -93,11 +93,11 @@
 				}				    
 		    }	 
 		       
-		    function get_script($handler, $file){
+		    function get_script($handler, $file, $footer = false){
 				if (file_exists($this->get_child_template_path() . $file)){
-					wp_enqueue_script( $handler, $this->get_child_template_url() . $file, array('jquery'), '1.0.0', false );				
+					wp_enqueue_script( $handler, $this->get_child_template_url() . $file, array('jquery'), '1.0.0', $footer );				
 				} elseif (file_exists($this->get_template_path() . $file)) {
-					wp_enqueue_script( $handler, $this->get_template_url()  . $file, array('jquery'), '1.0.0', false );				
+					wp_enqueue_script( $handler, $this->get_template_url()  . $file, array('jquery'), '1.0.0', $footer );				
 				}	 			    
 		    }
 		    

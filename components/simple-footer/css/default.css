@@ -1,0 +1,91 @@
+.simple-footer div.container-fluid.footer-top{
+	padding: 30px 0;
+}
+
+.simple-footer .logo-holder{
+	display: inline-block;
+	float: left;
+}
+
+.simple-footer .logo-holder .logo{
+	height: 60px;
+}
+
+.simple-footer .navigation-holder{
+	display: inline-block;
+	float: right;
+}
+
+.simple-footer .navigation-holder ul{
+	list-style: none;
+	display: inline-block;
+	line-height: 70px;
+	margin: 0;
+}
+
+.simple-footer .navigation-holder ul li{
+	float: left;
+	margin: 0 20px;
+}
+
+.simple-footer .navigation-holder ul li a{
+	font-size: 16px;
+	padding: 20px;
+	color: #333;
+}
+
+.simple-footer .navigation-holder ul li a:hover{
+	color: #57b6ff;
+}
+
+.simple-footer .footer-bottom{
+	padding: 0;
+	line-height: 44px;
+}
+
+.simple-footer .footer-bottom p{
+	display: inline-block;
+	float: left;	
+	color: #333;
+}
+
+.simple-footer .footer-bottom ul{
+	display: inline-block;
+	float: right;
+	margin: 0;
+}
+
+.simple-footer .footer-bottom ul li a{
+	padding: 10px;
+}
+
+.simple-footer .footer-bottom p a{
+	color: #57b6ff;
+	margin-left: 30px;	
+}
+
+.simple-footer .footer-bottom p a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

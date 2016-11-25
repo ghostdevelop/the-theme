@@ -19,6 +19,8 @@ if(!class_exists('TheTheme')) {
 		static function load_actions(){
 			add_action( 'init', array('TheTheme', 'navigations_setup' ));				
 			add_action( 'init', array('TheTheme', 'images_setup' ));				
+			add_action('admin_menu', array('TheTheme', 'create_pages'));		
+			add_action('admin_init', array('TheTheme', 'register_settings') );	
 		}
 		
 		static function navigations_setup(){
@@ -31,8 +33,25 @@ if(!class_exists('TheTheme')) {
 		
 			//Add image sizes
 			add_image_size( 'product-big-thumb', 270, 270, true );					
-		}	
+		}
 		
+		static function register_settings(){
+			register_setting('the-theme-group', 'logo'); 	
+			register_setting('the-theme-group', 'page-contact'); 	
+		}				
+		
+		static function create_pages(){
+			add_submenu_page('options-general.php', 'Téma beállítások', 'Téma beállítások', 'administrator', 'the-theme', array('TheTheme', 'the_theme_settings_page'));			
+		}
+		
+		static function the_theme_settings_page(){
+			include(sprintf("%s/admin/the-theme-settings.php", dirname(__FILE__)));	
+		}
+				
+		static function logout_url(){
+		  wp_redirect( home_url() );
+		  exit();
+		}		
 		
 	}
 	

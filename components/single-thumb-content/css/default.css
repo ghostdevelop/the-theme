@@ -1,0 +1,50 @@
+.single-thumb-content div.thumbnail-holder{
+	min-height: 200px;
+}
+
+.single-thumb-content > div{
+	background-size: 70%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 100%;	
+	margin-bottom: -6px;
+}
+
+.single-thumb-content div.content{
+	background: white;
+	padding: 20px;
+}
+
+.single-thumb-content div.content h2{
+	text-transform: uppercase;
+	margin-top: 0;
+	color: #333;
+}
+
+.single-thumb-content div.content hr{
+	width: 100px;
+	display: inline-block;
+	border-bottom: 2px solid #d6d6d6;
+	border-top: none;
+	margin-bottom: 30px;	
+}
+
+.single-thumb-content div.content .entry-content ul{
+	list-style: none;
+	padding: 0;
+}
+
+.single-thumb-content div.content .entry-content ul li:before{
+   font-family: FontAwesome;
+   content: "\f0a4";
+   display: inline-block;
+   margin: 0 5px 0 20px;
+   padding-right: 3px;
+   vertical-align: middle;	
+}
+
+@media screen and (max-width: 40em) {
+	.single-thumb-content > div{
+		background-size: 100%;		
+	}
+}

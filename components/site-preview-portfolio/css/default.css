@@ -1,0 +1,70 @@
+.site-preview-portfolio #portfolio-item #iframe-holder{
+	background: url(/iphone_6.png) no-repeat center;	
+	display: block;
+    height: 90vh;        /* Viewport-relative units */
+    width: 100vw;	
+	margin: 0 auto;  	
+}
+
+.site-preview-portfolio #portfolio-item #iframe-holder.mobile{
+	background: url(/iphone_6.png) no-repeat center;
+	background-size: 730px;
+	padding-top: 132px;
+	padding-left: 5px;
+}
+
+.site-preview-portfolio #portfolio-item iframe{
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+	margin: 0 auto;  	
+  
+}
+
+.site-preview-portfolio #navigation .page-title-block{
+	float: left;
+	display: inline-block;
+}
+
+.site-preview-portfolio #navigation{
+	background: rgb(122,188,255); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 );
+}
+
+.site-preview-portfolio #navigation nav{
+	display: inline-block;
+	float: right;	
+}
+.site-preview-portfolio #navigation div.navbar{
+	margin: 0;
+	height: 100px;
+}
+
+.site-preview-portfolio #navigation ul.portfolio-navigation{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-preview-portfolio #navigation ul.portfolio-navigation li{
+	float: left;
+}
+
+.site-preview-portfolio #navigation ul.portfolio-navigation li a{
+	padding: 0 20px;
+	margin: 0 20px;
+	display: block;
+	font-size: 46px;	
+	color: #efefef;
+	line-height: 100px;
+}
+
+.site-preview-portfolio #navigation ul.portfolio-navigation li a:hover{
+	color: rgb(178, 255, 71);
+	cursor: pointer;
+}

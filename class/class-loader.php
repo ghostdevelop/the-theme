@@ -23,6 +23,7 @@
 		    	
 		    	//Styles	    			    
 				wp_enqueue_style( 'bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, '');			    
+				wp_enqueue_style( 'hover', get_template_directory_uri() . '/css/hover.css', array(), false, '');			    
 				wp_enqueue_style( 'font-awesome.min', get_template_directory_uri() . '/css/font-awesome.min.css', array(), false, '');			    
 				wp_enqueue_style( 'the-theme-default', get_template_directory_uri() . '/style.css', array(), false, '');			    
 				wp_enqueue_style( 'style-name', get_stylesheet_uri() );
