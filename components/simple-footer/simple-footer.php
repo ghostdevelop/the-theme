@@ -3,7 +3,9 @@
 	<div class="container-fluid footer-top">
 		<div class="container">
 			<div class="logo-holder">
-				<img class="logo" src="<?php echo get_option('logo')?>" />
+				<a href="<?php echo home_url()?>">			
+					<img class="logo" src="<?php echo get_option('logo')?>" />
+				</a>
 			</div>
 			<div class="navigation-holder">
 				<?php 
@@ -18,7 +20,7 @@
 	</div>	
 	<div class="container-fluid footer-bottom">
 		<div class="container">
-			<p class="pull-sm-left">© <span id="copyright-year">2016</span> All Rights Reserved <a href="terms.html">Terms of Use and Privacy Policy</a></p>
+			<p class=""><span id="copyright-year">© 2016 All Rights Reserved</span> <a href="terms.html">Terms of Use and Privacy Policy</a></p>
 			<ul class="list-inline pull-sm-right offset-3">
 				<li><a href="#" class="fa fa-facebook"></a></li>
 				<li><a href="#" class="fa fa-twitter"></a></li>

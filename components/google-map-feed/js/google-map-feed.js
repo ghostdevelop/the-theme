@@ -7,17 +7,17 @@ jQuery("#map-" + GoogleMapFeed.id).gMap({
 	styles: style,
 	doubleClickZoom: true, 
 	controls: {
-		panControl: true, 
+		panControl: false, 
 		zoomControl: true, 
-		mapTypeControl: true, 
-		scaleControl: true, 
-		streetViewControl: true, 
-		overviewMapControl: true, 
+		mapTypeControl: false, 
+		scaleControl: false, 
+		streetViewControl: false, 
+		overviewMapControl: false, 
 	},
 	markers: GoogleMapFeed.locations
 }); 
 
 jQuery('.remove').click(function(){
-	jQuery('#map-google-map-feed-1').gMap('clearMarkers');
+	jQuery("#map-" + GoogleMapFeed.id).gMap('clearMarkers');
 })
 					

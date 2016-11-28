@@ -3,12 +3,16 @@
 		<div id="main-content">
 			<div class="container">
 				<div class="col-md-9">
-					<div class="breadcrumb">
-						<?php if ( function_exists('yoast_breadcrumb') ):?>
-							<?php yoast_breadcrumb('<div id="breadcrumbs">','</div>'); ?>
-						<?php endif?>
-					</div>					
-					<?php load_component( array( 'id' => 1, 'type' => 'page-404', 'btn_class' => 'btn btn-dark hvr-shutter-out-horizontal')); ?>	
+				<div class="breadcrumb">
+					<?php if ( function_exists('yoast_breadcrumb') ):?>
+						<?php yoast_breadcrumb('<div id="breadcrumbs">','</div>'); ?>
+					<?php endif?>
+				</div>				
+				<?php if (have_posts()): ?>
+					<?php while (have_posts()): the_post()?>
+						<?php load_component( array( 'id' => 1, 'type' => 'archive-content', 'btn_class' => 'btn btn-dark hvr-shutter-out-horizontal')); ?>
+					<?php endwhile?>	
+				<?php endif;?>
 				</div>	
 				<div class="col-md-3 right-sidebar">
 					<?php dynamic_sidebar('right-sidebar')?>

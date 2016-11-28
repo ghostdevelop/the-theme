@@ -35,14 +35,22 @@
 			}	
 			
 			static function sidebar_setup() {
-			
+				register_sidebar( array(
+					'name' => 'Home sidebar',
+					'id' => 'home-sidebar',
+					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
+					'after_widget' 		=> '</div>',
+					'before_title'		=> '<div class="widget-title"><h3>',
+					'after_title' 		=> '</h3><hr /></div>',
+				) );	
+							
 				register_sidebar( array(
 					'name' => 'Right sidebar',
 					'id' => 'right-sidebar',
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
-					'after_title' 		=> '</h3></div>',
+					'after_title' 		=> '</h3><hr /></div>',
 				) );			
 				
 				register_sidebar( array(
@@ -51,7 +59,7 @@
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
-					'after_title' 		=> '</h3></div>',
+					'after_title' 		=> '</h3><hr /></div>',
 				) );
 				
 				register_sidebar( array(
@@ -60,7 +68,7 @@
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
-					'after_title' 		=> '</h3></div>',
+					'after_title' 		=> '</h3><hr /></div>',
 				) );
 				
 				register_sidebar( array(
@@ -69,7 +77,7 @@
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
-					'after_title' 		=> '</h3></div>',
+					'after_title' 		=> '</h3><hr /></div>',
 				) );																				
 			}		
 							    				    	    				

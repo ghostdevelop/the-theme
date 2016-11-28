@@ -1,0 +1,10 @@
+.archive-content{
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.archive-content .archive-thumbnail{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}

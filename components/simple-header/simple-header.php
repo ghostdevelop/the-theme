@@ -2,7 +2,9 @@
 <div id="<?php echo $SimpleHeader->id?>" class="<?php echo $SimpleHeader->type?>">
 	<div class="container">
 		<div class="logo-holder">
-			<img class="logo" src="<?php echo get_option('logo')?>" />
+			<a href="<?php echo home_url()?>">
+				<img class="logo" src="<?php echo get_option('logo')?>" />
+			</a>
 		</div>
 		<div class="navigation-holder">
 			<?php 

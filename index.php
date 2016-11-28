@@ -13,6 +13,16 @@
 				</div>
 			</div>
 			<?php load_component( array( 'id' => 1, 'type' => 'members', 'query' => array('post_type' => 'member'))); ?>	
+			<div id="contact-line-holder">
+				<div class="container">
+					<div class="col-md-8 col-xs-12 form-holder">
+						<?php echo do_shortcode('[contact-form-7 id="50" title="Írjon nekünk"]')?>
+					</div>
+					<div class="col-md-4 col-xs-12 home-sidebar">
+						<?php dynamic_sidebar('home-sidebar')?>
+					</div>
+				</div>
+			</div>
 		<?php endif;?>
 		<div class="container-fluid">
 			<div class="row">
@@ -32,7 +42,7 @@
 						)
 					)
 				));
-			?>		
+			?>					
 			</div>			
 		</div>
 	<?php load_component( array('id' => 1, 'type' =>  'simple-footer', 'menu' => 'footer-menu') ); ?>			

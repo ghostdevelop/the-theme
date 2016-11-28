@@ -14,16 +14,97 @@ a:hover{
 	text-decoration: none;
 }
 
+textarea,
+input{
+	max-width: 100%;
+}
 
+.widget{
+	margin-bottom: 20px;
+}
 
+.widget .widget-title{
+	margin-bottom: 10px;
+}
 
+.widget ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
 
+.widget ul li a{
+	padding: 10px 0;
+	display: block;
+}
 
+.widget ul li a:before{
+	font-family: FontAwesome;
+	content: "\f0a4";
+	display: inline-block;
+	margin: 0 5px 0 20px;
+	padding-right: 3px;
+	vertical-align: middle;	
+}
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+.wpcf7-form-control-wrap input[type="text"],
+.wpcf7-form-control-wrap input[type="email"],
+.wpcf7-form-control-wrap input[type="number"],
+.wpcf7-form-control-wrap input[type="password"],
+.wpcf7-form-control-wrap textarea{
+	background: none;
+	resize: none;
+	border: 1px solid rgba(114, 107, 116, 0.65);
+	padding: 10px;
+	margin: 5px 0;
+}
 
+button,
+input[type="submit"]{
+	background: none;
+	resize: none;
+	border: 1px solid rgba(114, 107, 116, 0.65);
+	padding: 10px;
+	margin: 5px 0;
+}
 
+button:hover,
+input[type="submit"]:hover{
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+	background: #57b6ff;
+	color: white;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;	
+}
 
+span,
+p{
+	  overflow-wrap: break-word;
+	  word-wrap: break-word;
+	  -webkit-hyphens: auto;
+	  -ms-hyphens: auto;
+	  -moz-hyphens: auto;
+	  hyphens: auto;		
+}
 
 
 
