@@ -72,6 +72,35 @@
 
 
 
+@media all and (max-width: 414px) {
+	.simple-footer .footer-bottom p{
+		display: block;
+		margin: 0px auto;
+		text-align: center;
+		float: none;
+	}
+	
+	.simple-footer .footer-bottom p span{
+		display: block;
+		
+	}
+	
+	.simple-footer .logo-holder{
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	
+	.simple-footer .footer-bottom ul{
+		display: block;
+		float: none;
+		text-align: center;
+	}
+}
+
+
+
+
 
 
 

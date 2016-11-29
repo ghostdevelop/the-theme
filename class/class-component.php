@@ -44,11 +44,13 @@
 				
 				$parent_url = get_template_directory() . '/components/' . end($explode) . '/post-types/';
 				$child_url = get_stylesheet_directory() . '/components/' . end($explode) . '/post-types/';
-
-				$parent_post_types = glob($parent_url . '*.php');		    
-				$child_post_types = glob($child_url . '*.php');		    
 				
-				$post_types = array_merge($parent_post_types, $child_post_types); 
+				$parent_post_types = glob($parent_url . '*.php');		    
+				$child_post_types = glob($child_url . '*.php');	
+				
+				$post_types = $parent_post_types;
+				
+				if (is_array($child_post_types)) $post_types = array_merge($parent_post_types, $child_post_types); 
 				   
 				foreach ($post_types as $post_type){
 					$explode = explode("/", $post_type);

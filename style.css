@@ -106,8 +106,38 @@ p{
 	  hyphens: auto;		
 }
 
+#wrapper{
+	max-width: 1170px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+#wrapper.full-container .container{
+	padding-left: 0;
+	padding-right: 0;
+}
 
 
+/******************** CONTACT FORM *****************/
+
+body div.wpcf7-response-output{
+	display: inline-block;
+	margin: 0;
+	padding: 20px 5px;
+	text-transform: uppercase;
+}
+
+body div.wpcf7-response-output.wpcf7-validation-errors{
+	background: #ddbd04;	
+	border-color: #ddbd04;
+}
+
+body div.wpcf7-response-output.wpcf7-mail-sent-ok{
+	background: #398f14;
+	color: #efefef;
+	display: block;
+}
 
 
 

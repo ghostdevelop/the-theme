@@ -1,0 +1,13 @@
+.simple-archive .hentry{
+	display: inline-block;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.simple-archive .archive-thumbnail{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.simple-archive .archive-thumbnail{

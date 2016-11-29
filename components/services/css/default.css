@@ -1,0 +1,24 @@
+.services .services-list{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.services .services-list li{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	flex: 1;
+	text-align: center;
+}
+
+.services > h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+

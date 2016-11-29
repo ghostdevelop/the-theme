@@ -1,6 +1,6 @@
 <?php $SimpleFooter = new SimpleFooter($options)?>
 <div id="<?php echo $SimpleFooter->id?>" class="<?php echo $SimpleFooter->type?>">
-	<div class="container-fluid footer-top">
+	<div class="footer-top">
 		<div class="container">
 			<div class="logo-holder">
 				<a href="<?php echo home_url()?>">			
@@ -18,7 +18,7 @@
 			</div>
 		</div>
 	</div>	
-	<div class="container-fluid footer-bottom">
+	<div class="footer-bottom">
 		<div class="container">
 			<p class=""><span id="copyright-year">© 2016 All Rights Reserved</span> <a href="terms.html">Terms of Use and Privacy Policy</a></p>
 			<ul class="list-inline pull-sm-right offset-3">
