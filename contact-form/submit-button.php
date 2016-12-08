@@ -8,7 +8,7 @@
 add_action( 'wpcf7_init', 'wpcf7_custom_add_shortcode_submit' );
 
 function wpcf7_custom_add_shortcode_submit() {
-	wpcf7_add_shortcode( 'submit', 'wpcf7_custom_submit_shortcode_handler' );
+	wpcf7_add_form_tag( 'submit', 'wpcf7_custom_submit_shortcode_handler' );
 }
 
 function wpcf7_custom_submit_shortcode_handler( $tag ) {
