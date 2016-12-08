@@ -10,7 +10,8 @@ jQuery(function() {
 					$nav.eq( pos ).addClass( 'nav-dot-current' );
 
 				},
-				autoplay: true
+				autoplay: true,
+				interval: 4000
 			} ),
 
 			init = function() {
