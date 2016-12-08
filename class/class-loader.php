@@ -5,6 +5,7 @@
 	    
 		    public static function load(){
 		    	ClassLoader::load_components();
+		    	add_action( 'wp_enqueue_scripts', array('ClassLoader', 'load_default_css_js' ));
 		    	add_action( 'admin_enqueue_scripts', array('ClassLoader', 'load_admin_assets' ));
 		    }
 		    
