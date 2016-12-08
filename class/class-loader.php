@@ -5,7 +5,7 @@
 	    
 		    public static function load(){
 		    	ClassLoader::load_components();
-		    	add_action( 'wp_enqueue_scripts', array('ClassLoader', 'load_default_css_js' ));
+		    	add_action( 'admin_enqueue_scripts', array('ClassLoader', 'load_admin_assets' ));
 		    }
 		    
 		    static function load_components(){
@@ -18,6 +18,10 @@
 					}
 				}			  
 		    }	
+		    
+		    static function load_admin_assets(){
+				wp_enqueue_style( 'admin-metabox', get_template_directory_uri() . '/css/admin-metabox.css', array(), false, '');			    
+		    }
 		    
 		    static function load_default_css_js(){
 		    	

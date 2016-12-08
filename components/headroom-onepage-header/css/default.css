@@ -1,0 +1,43 @@
+.headroom {
+    will-change: transform;
+	transition: transform 200ms linear;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	height: 100px;
+	top: 0;
+	position: absolute;
+	border-width: 0 0 1px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030	
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.headroom--not-top{
+	background: rgba(0, 0, 0, 0.8) !important;
+	padding: 0;
+}
+
+.headroom div.navigation-holder{
+	display: inline-block;
+	float: left;	
+}
+
+.headroom div.logo-holder{
+	display: inline-block;
+	float: left;	
+}
+
+.headroom div.logo-holder img{
+	display: block;
+	max-height: 100%;	
+}
