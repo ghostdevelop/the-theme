@@ -9,8 +9,8 @@
 		    }    	    
 			
 			static function wpcf7_add_submit_button() {
-		        if(function_exists('wpcf7_remove_shortcode')) {
-	                wpcf7_remove_shortcode('submit');
+		        if(function_exists('wpcf7_remove_form_tag')) {
+	                wpcf7_remove_form_tag('submit');
 	                remove_action( 'admin_init', 'wpcf7_add_tag_generator_submit', 55 );
 	                $cf7_module = TEMPLATEPATH . '/contact-form/submit-button.php';
 	                require_once $cf7_module;
