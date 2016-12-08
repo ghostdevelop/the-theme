@@ -1,16 +1,6 @@
 <?php
  if (!class_exists('ServicesPostType')){ 
-	class ServicesPostType {
-	
-	
-	    static $fields = array();	
-	    /**
-	    * hooks
-	    */
-	    public static function load() {
-	        add_action('init', array('ServicesPostType', 'register')); 
-	
-	    }
+	class ServicesPostType extends PostType{
 	
 	    /**
 	    * register Custom Post Type
@@ -48,7 +38,7 @@
 	            'revisions' => false,
 	            'hierarchical' => true,
 	            'has_archive' => true,
-				'supports' => array('title','editor','thumbnail', 'custom-fields'),
+				'supports' => array('title','editor','thumbnail', 'custom-fields', 'page-attributes'),
 	            'rewrite' => false,
 	            'can_export' => false,
 	            'capabilities' => array (
