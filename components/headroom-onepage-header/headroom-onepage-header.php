@@ -12,7 +12,7 @@
 				wp_nav_menu( array(
 				    'theme_location' => $options['menu'],
 				    'container' => '',
-				    'items_wrap' => '<ul id="' . $HeadroomOnepageHeader->id . '-menu" class="%2$s sf-menu">%3$s</ul>'
+				    'items_wrap' => '<ul id="' . $HeadroomOnepageHeader->id . '-menu" class="%2$s headroom-menu">%3$s</ul>'
 				) );	
 			?>    
 		</div>

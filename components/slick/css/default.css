@@ -1,0 +1,38 @@
+.slick .slick-slide{
+	z-index: 1;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.slick .slick-slide.slick-active{
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
+	z-index: 2;	
+}
+
+.slick .slick-slide.slick-center{
+	position: relative;
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	z-index: 3;	
+}
+
+.slick .slick-slide img{
+	margin: 0 auto;
+}
+
+.slick .slick-track{
+	height: 700px;
+	padding-top: 100px;	
+}
+
+.slick .slick-prev{
+	left: 10px;
+}
+
+.slick .slick-next{
+	right: 10px;
+}
+
