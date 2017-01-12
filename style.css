@@ -119,6 +119,29 @@ p{
 }
 
 
+/******************** PRELOADER *****************/
+
+/* Absolute Center Spinner */
+#preloader {
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #191919;
+}
+
+#preloader img{
+	position: absolute;
+	width: 250px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);	
+}
+
 /******************** CONTACT FORM *****************/
 
 body div.wpcf7-response-output{

@@ -1,5 +1,10 @@
 /* == WordPress WYSIWYG Editor Styles == */
 
+.entry-content > p {
+	display: inline-block;	
+	float: left;
+}
+
 .entry-content img {
 	margin: 0 0 1.5em 0;
 	max-width: 100%;

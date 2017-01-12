@@ -51,7 +51,16 @@
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
 					'after_title' 		=> '</h3><hr /></div>',
-				) );			
+				) );		
+				
+				register_sidebar( array(
+					'name' => 'Left sidebar',
+					'id' => 'left-sidebar',
+					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
+					'after_widget' 		=> '</div>',
+					'before_title'		=> '<div class="widget-title"><h3>',
+					'after_title' 		=> '</h3><hr /></div>',
+				) );						
 				
 				register_sidebar( array(
 					'name' => 'Footer sidebar 1',

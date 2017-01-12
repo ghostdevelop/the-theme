@@ -47,12 +47,7 @@ if(!class_exists('TheTheme')) {
 		static function the_theme_settings_page(){
 			include(sprintf("%s/admin/the-theme-settings.php", dirname(__FILE__)));	
 		}
-				
-		static function logout_url(){
-		  wp_redirect( home_url() );
-		  exit();
-		}		
-		
+						
 	}
 	
 }

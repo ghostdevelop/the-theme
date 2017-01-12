@@ -11,3 +11,4 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(get_option('stylesheet')); ?>>
+    	<?php get_template_part('preloader')?>

@@ -1,0 +1,120 @@
+.simple-shop-footer div.container-fluid.footer-top{
+	padding: 30px 0;
+}
+
+.simple-shop-footer .logo-holder{
+	display: inline-block;
+	float: left;
+}
+
+.simple-shop-footer .logo-holder .logo{
+	height: 60px;
+}
+
+.simple-shop-footer .navigation-holder{
+	display: inline-block;
+	float: right;
+}
+
+.simple-shop-footer .navigation-holder ul{
+	list-style: none;
+	display: inline-block;
+	line-height: 70px;
+	margin: 0;
+}
+
+.simple-shop-footer .navigation-holder ul li{
+	float: left;
+	margin: 0 20px;
+}
+
+.simple-shop-footer .navigation-holder ul li a{
+	font-size: 16px;
+	padding: 20px;
+	color: #333;
+}
+
+.simple-shop-footer .navigation-holder ul li a:hover{
+	color: #57b6ff;
+}
+
+.simple-shop-footer .footer-bottom{
+	padding: 0;
+	line-height: 44px;
+}
+
+.simple-shop-footer .footer-bottom p{
+	display: inline-block;
+	float: left;	
+	color: #333;
+}
+
+.simple-shop-footer .footer-bottom ul{
+	display: inline-block;
+	float: right;
+	margin: 0;
+}
+
+.simple-shop-footer .footer-bottom ul li a{
+	padding: 10px;
+}
+
+.simple-shop-footer .footer-bottom p a{
+	color: #57b6ff;
+	margin-left: 30px;	
+}
+
+.simple-shop-footer .footer-bottom p a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+@media all and (max-width: 414px) {
+	.simple-shop-footer .footer-bottom p{
+		display: block;
+		margin: 0px auto;
+		text-align: center;
+		float: none;
+	}
+	
+	.simple-shop-footer .footer-bottom p span{
+		display: block;
+		
+	}
+	
+	.simple-shop-footer .logo-holder{
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	
+	.simple-shop-footer .footer-bottom ul{
+		display: block;
+		float: none;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

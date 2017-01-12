@@ -1,0 +1,1 @@
+<div id="preloader"><img src="<?php echo get_template_directory_uri()?>/images/loader.gif" /></div>
