@@ -18,5 +18,5 @@
 		
 	}
 	
-	Members::load_post_types(__FILE__);	
+	Slick::load_post_types(__FILE__);	
 	

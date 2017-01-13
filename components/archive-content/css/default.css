@@ -1,6 +1,8 @@
 .archive-content{
 	margin-bottom: 20px;
-	display: inline-block;
+	display: block;
+	float: none;
+	clear: both;
 }
 
 .archive-content .archive-thumbnail{

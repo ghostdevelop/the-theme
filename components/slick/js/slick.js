@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
-
-      $(".center").slick({
+      $('#' + Slick.id + ' .slider').slick({
         dots: true,
         infinite: true,
         centerMode: true,

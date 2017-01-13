@@ -12,6 +12,14 @@ if(!class_exists('TheTheme')) {
 				}
 			}
 			
+			$post_types = glob(dirname(__FILE__) . '/post-types/*.php');
+			
+			if (!empty($post_types)){
+				foreach ($post_types as $post_type){
+					require_once($post_type);
+				}
+			}			
+			
 			TheTheme::load_actions();
 				
 		}
