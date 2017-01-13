@@ -1,0 +1,346 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-13 18:53+0000\n"
+"PO-Revision-Date: 2017-01-13 19:10+0000\n"
+"Last-Translator: Ghost <asd@asd.asd>\n"
+"Language-Team: Hungarian\n"
+"Language: hu-HU\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: functions.php:45
+msgid "Top menu"
+msgstr ""
+
+#: functions.php:46
+msgid "Registration menu"
+msgstr ""
+
+#: admin/the-theme-settings.php:9
+msgid "The Theme beállítások"
+msgstr ""
+
+#: post-types/rooms.php:18
+msgid "Új szoba hozzáadása"
+msgstr ""
+
+#: post-types/rooms.php:19
+msgid "Új szoba"
+msgstr ""
+
+#: post-types/rooms.php:20
+msgid "Szoba szerkesztése"
+msgstr ""
+
+#: post-types/rooms.php:21
+msgid "Szoba megtekintése"
+msgstr ""
+
+#: post-types/rooms.php:22
+msgid "Összes szoba"
+msgstr ""
+
+#: post-types/rooms.php:23
+msgid "Szoba keresése"
+msgstr ""
+
+#: post-types/rooms.php:24
+msgid "Parent szoba:"
+msgstr ""
+
+#: post-types/rooms.php:25
+msgid "Nincsenek szobák."
+msgstr ""
+
+#: post-types/rooms.php:26
+msgid "Nincsenek szobák a kukában."
+msgstr ""
+
+#: post-types/rooms.php:28
+msgid "Szobák"
+msgstr ""
+
+#: components/archive-content/archive-content.php:14
+#: components/simple-archive/simple-archive.php:21
+msgid "Tovább"
+msgstr ""
+
+#: components/flat-boxes/flat-boxes.php:12 components/jumbotron/jumbotron.php:8
+msgid "Megnézem"
+msgstr ""
+
+#: components/page-404/page-404.php:4
+msgid "404"
+msgstr ""
+
+#: components/page-404/page-404.php:4
+msgid "hiba"
+msgstr ""
+
+#: components/page-404/page-404.php:5
+msgid ""
+"A kért oldal nem található. A tartalmat valószínűleg eltávolították, vagy "
+"másik url-re költözött."
+msgstr ""
+
+#: components/page-404/page-404.php:6
+msgid "Próbálkozzon kereséssel"
+msgstr ""
+
+#: components/services/services.php:4
+#: components/services/post-types/services.php:28
+msgid "Szolgáltatásaink"
+msgstr ""
+
+#: components/simple-archive/simple-archive.php:28
+msgid "Jelenleg nincs egyetlen találat sem."
+msgstr ""
+
+#: components/simple-shop-header/component.php:27
+msgid "Register"
+msgstr "Regisztráció"
+
+#: components/simple-shop-header/component.php:28
+msgid "Lost Password"
+msgstr ""
+
+#: components/site-preview-portfolio/site-preview-portfolio.php:8
+msgid "Website Portfolio"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:35
+msgid "Új helyszín hozzáadása"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:36
+msgid "Új helyszín"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:37
+msgid "Helyszín szerkesztése"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:38
+msgid "Helyszín megtekintése"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:39
+msgid "Összes helyszín"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:40
+msgid "Helyszín keresése"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:41
+msgid "Parent helyszín:"
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:42
+msgid "Nincsenek helyszínek."
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:43
+msgid "Nincsenek helyszínek a kukában."
+msgstr ""
+
+#: components/google-map-feed/post-types/locations.php:45
+msgid "Helyszínek"
+msgstr ""
+
+#: components/members/post-types/members.php:18
+msgid "Új munkatárs hozzáadása"
+msgstr ""
+
+#: components/members/post-types/members.php:19
+msgid "Új munkatárs"
+msgstr ""
+
+#: components/members/post-types/members.php:20
+msgid "Munkatárs szerkesztése"
+msgstr ""
+
+#: components/members/post-types/members.php:21
+msgid "Munkatárs megtekintése"
+msgstr ""
+
+#: components/members/post-types/members.php:22
+msgid "Összes munkatárs"
+msgstr ""
+
+#: components/members/post-types/members.php:23
+msgid "Munkatárs keresése"
+msgstr ""
+
+#: components/members/post-types/members.php:24
+msgid "Parent munkatárs:"
+msgstr ""
+
+#: components/members/post-types/members.php:25
+msgid "Nincsenek munkatársak."
+msgstr ""
+
+#: components/members/post-types/members.php:26
+msgid "Nincsenek munkatársak a kukában."
+msgstr ""
+
+#: components/members/post-types/members.php:28
+msgid "Munkatársaink"
+msgstr ""
+
+#: components/services/post-types/services.php:18
+msgid "Új szolgáltatás hozzáadása"
+msgstr ""
+
+#: components/services/post-types/services.php:19
+msgid "Új szolgáltatás"
+msgstr ""
+
+#: components/services/post-types/services.php:20
+msgid "Szolgáltatás szerkesztése"
+msgstr ""
+
+#: components/services/post-types/services.php:21
+msgid "Szolgáltatás megtekintése"
+msgstr ""
+
+#: components/services/post-types/services.php:22
+msgid "Összes szolgáltatás"
+msgstr ""
+
+#: components/services/post-types/services.php:23
+msgid "Szolgáltatás keresése"
+msgstr ""
+
+#: components/services/post-types/services.php:24
+msgid "Parent szolgáltatás:"
+msgstr ""
+
+#: components/services/post-types/services.php:25
+msgid "Nincsenek szolgáltatásak."
+msgstr ""
+
+#: components/services/post-types/services.php:26
+msgid "Nincsenek szolgáltatásak a kukában."
+msgstr ""
+
+#: components/slick/post-types/gallery.php:24
+msgid "Új kép hozzáadása"
+msgstr ""
+
+#: components/slick/post-types/gallery.php:25
+msgid "Új kép"
+msgstr ""
+
+#: components/slick/post-types/gallery.php:26
+msgid "Galéria szerkesztése"
+msgstr ""
+
+#: components/slick/post-types/gallery.php:27
+msgid "Galéria megtekintése"
+msgstr ""
+
+#: components/slick/post-types/gallery.php:28
+msgid "Összes kép"
+msgstr ""
+
+#: components/slick/post-types/gallery.php:29
+msgid "Galéria keresése"
+msgstr ""
+
+#: components/slick/post-types/gallery.php:30
+msgid "Parent galéria:"
+msgstr ""
+
+#: components/slick/post-types/gallery.php:31
+msgid "Nincsenek képek."
+msgstr ""
+
+#: components/slick/post-types/gallery.php:32
+msgid "Nincsenek képek a kukában."
+msgstr ""
+
+#: components/slick/post-types/gallery.php:34
+msgid "Galériák"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:19
+msgid "Új hírdetés hozzáadása"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:20
+msgid "Új hírdetés"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:21
+msgid "Hírdetés szerkesztése"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:22
+msgid "Hírdetés megtekintése"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:23
+msgid "Összes hírdetés"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:24
+msgid "Hírdetés keresése"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:25
+msgid "Parent hírdetés:"
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:26
+msgid "Nincsenek hírdetések."
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:27
+msgid "Nincsenek hírdetések a kukában."
+msgstr ""
+
+#: components/slit-slider/post-types/ads.php:29
+msgid "Hírdetések"
+msgstr ""
+
+#. Name of the theme
+msgid "The Theme"
+msgstr ""
+
+#. Description of the theme
+msgid "The ultimate theme for developers"
+msgstr ""
+
+#. Author of the theme
+msgid "Ghost"
+msgstr ""
+
+#: components/simple-shop-header/simple-shop-header.php:8
+msgid "Search"
+msgstr "Keresés"
+
+#: components/simple-shop-header/component.php:23
+msgid "My Account"
+msgstr "Profilom"
+
+#: components/simple-shop-header/component.php:24
+msgid "Logout"
+msgstr "Kijelentkezés"
+
+#: components/simple-shop-header/component.php:26
+msgid "Log in"
+msgstr "Bejelentkezés"
+
+#: components/simple-shop-header/simple-shop-header.php:7
+msgid "Search …"
+msgstr "Keresés...."
+
+#: components/simple-shop-header/simple-shop-header.php:7
+msgid "Search for:"
+msgstr "Keresett kifejezés:"

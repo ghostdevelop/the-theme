@@ -20,7 +20,17 @@ if(!class_exists('TheTheme')) {
 				}
 			}			
 			
+			$widgets = glob(dirname(__FILE__) . '/widgets/*.php');
+
+			if (!empty($widgets)){
+				foreach ($widgets as $widget){
+					require_once($widget);
+				}
+			}			
+						
 			TheTheme::load_actions();
+			
+			load_theme_textdomain( 'the-theme', get_template_directory() . '/languages' );			
 				
 		}
 		

@@ -4,8 +4,8 @@
 		<div class="container">
 			<div class="header-search">
 				<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-					<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'the-shop' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'the-shop' ) ?>" />
-				    <button type="submit" class="search-submit <?php echo (isset($options['search_btn_class']) ? $options['search_btn_class'] : 'btn')?>" ><?php echo esc_attr_x( 'Search', 'the-shop' ) ?></button>
+					<input type="search" class="search-field" placeholder="<?php _e( 'Search …', 'the-theme' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php _e( 'Search for:', 'the-theme' ) ?>" />
+				    <button type="submit" class="search-submit <?php echo (isset($options['search_btn_class']) ? $options['search_btn_class'] : 'btn')?>" ><?php _e( 'Search', 'the-theme' ) ?></button>
 				</form>		
 			</div>
 			<?php echo woocommerce_mini_cart() ?>

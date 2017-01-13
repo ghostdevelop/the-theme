@@ -1,0 +1,30 @@
+.flat-boxes .box{
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.flat-boxes div.caption{
+	position: absolute;
+	bottom: 0;	
+	padding: 0 20px 20px;
+	background: rgba(0,0,0, .5);
+	margin-bottom: -60px;	
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;	
+	cursor: pointer;
+}
+
+.flat-boxes div.caption h3{
+	font-size: 48px;
+}
+
+.flat-boxes div.caption h3 a{
+	color: white;
+}
+
+.flat-boxes .box:hover div.caption{
+	margin-bottom: 0;
+}
