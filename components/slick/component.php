@@ -24,5 +24,4 @@
 		
 	}
 	
-	Slick::load_post_types(__FILE__);	
 	

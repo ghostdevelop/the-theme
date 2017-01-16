@@ -1,8 +1,7 @@
 /* == WordPress WYSIWYG Editor Styles == */
 
 .entry-content > p {
-	display: inline-block;	
-	float: left;
+	display: block;	
 }
 
 .entry-content img {
@@ -72,3 +71,9 @@ blockquote.right {
 .size-large {}
 .size-medium {}
 .size-thumbnail {}
+
+.entry-content form.wpcf7-form{
+	display: block;
+	clear: both;
+
+}

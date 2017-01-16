@@ -20,7 +20,7 @@
 	</div>	
 	<div class="footer-bottom">
 		<div class="container">
-			<p class=""><span id="copyright-year">© 2016 All Rights Reserved</span> <a href="terms.html">Terms of Use and Privacy Policy</a></p>
+			<p class=""><span id="copyright-year"><?php _e('© 2016 All Rights Reserved', 'the-theme')?></span></p>
 			<ul class="list-inline pull-sm-right offset-3">
 				<li><a href="#" class="fa fa-facebook"></a></li>
 				<li><a href="#" class="fa fa-twitter"></a></li>
