@@ -63,26 +63,8 @@
 				) );						
 				
 				register_sidebar( array(
-					'name' => 'Footer sidebar 1',
-					'id' => 'footer-sidebar-1',
-					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
-					'after_widget' 		=> '</div>',
-					'before_title'		=> '<div class="widget-title"><h3>',
-					'after_title' 		=> '</h3><hr /></div>',
-				) );
-				
-				register_sidebar( array(
-					'name' => 'Footer sidebar 2',
-					'id' => 'footer-sidebar-2',
-					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
-					'after_widget' 		=> '</div>',
-					'before_title'		=> '<div class="widget-title"><h3>',
-					'after_title' 		=> '</h3><hr /></div>',
-				) );
-				
-				register_sidebar( array(
-					'name' => 'Footer sidebar 3',
-					'id' => 'footer-sidebar-4',
+					'name' => 'Footer sidebar',
+					'id' => 'footer-sidebar',
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',

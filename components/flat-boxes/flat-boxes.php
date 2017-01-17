@@ -1,6 +1,14 @@
 <?php $FlatBoxes = new FlatBoxes($options)?>
 <div id="<?php echo $FlatBoxes->id ?>" class="<?php echo $FlatBoxes->type ?>">
-	<?php $boxes = new WP_Query($options['query']);?>
+	<?php 
+		if (isset($options['query'])){
+			$boxes = new WP_Query($options['query']);			
+		} else {
+			$boxes = $wp_query;			
+		}
+
+	?>
+
 	<?php if ($boxes->have_posts()):?>
 		<div class="boxes-holder clearfix">
 			<?php while ($boxes->have_posts()): $boxes->the_post()?>
