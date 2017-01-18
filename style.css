@@ -211,4 +211,9 @@ body div.wpcf7 .ajax-loader{
 }
 
 
-
+@media screen and (max-width: 768px) {
+	.scrollToTop{
+		bottom: 50px;
+		right: 10px;
+	}	
+}
