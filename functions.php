@@ -49,8 +49,8 @@ if(!class_exists('TheTheme')) {
 		static function images_setup(){		
 			add_theme_support( 'post-thumbnails' );			
 		
-			//Add image sizes
-			add_image_size( 'product-big-thumb', 270, 270, true );					
+			//Add image sizes	
+			add_image_size( 'full-slider', 1600 );							
 		}
 		
 		static function register_settings(){
@@ -71,3 +71,5 @@ if(!class_exists('TheTheme')) {
 }
 
 TheTheme::load();
+
+				
