@@ -8,7 +8,7 @@
 	
 		    	parent::load();
 		    	
-		    	
+		    	add_image_size( 'full-slider', 1980 );
 	    	}
 		    
 		}

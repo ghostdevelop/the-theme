@@ -14,7 +14,7 @@
 			<?php while ($slider->have_posts()): $slider->the_post()?>     
 	            <div class="item <?php echo ($slider->current_post == 0 ? "active" : "")?>">
 	                <!-- Set the third background image using inline CSS below. -->
-	                <div class="fill" style="background-image:url('<?php the_post_thumbnail_url()?>');"></div>
+	                <div class="fill" style="background-image:url('<?php the_post_thumbnail_url("full-slider")?>');"></div>
 	                <div class="carousel-caption">
 	                    <h2><?php the_title()?></h2>
 	                </div>
