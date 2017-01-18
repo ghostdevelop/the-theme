@@ -106,7 +106,8 @@
 		 }
 		 
 	    static function add_metabox(){
-		    add_meta_box('members-options', __('Gallery', 'the-theme'), array('GalleriesPostType', 'metabox'), 'page','side');
+		    add_meta_box('members-options', __('Gallery', 'the-theme'), array('GalleriesPostType', 'metabox'), 'page','side', 'low');
+		    add_meta_box('members-options', __('Gallery', 'the-theme'), array('GalleriesPostType', 'metabox'), 'room','side', 'low');
 	    }
 	    
 	    static function metabox($post){

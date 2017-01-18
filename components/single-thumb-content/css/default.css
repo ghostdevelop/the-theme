@@ -5,9 +5,8 @@
 .single-thumb-content > div{
 	background-size: 70%;
 	background-repeat: no-repeat;
-	display: inline-block;
+	display: block;
 	width: 100%;	
-	margin-bottom: -6px;
 }
 
 .single-thumb-content > div.right{
@@ -47,8 +46,12 @@
    vertical-align: middle;	
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 768px) {
 	.single-thumb-content > div{
 		background-size: 100%;		
 	}
+	
+	.single-thumb-content > div.right{
+		background-position: bottom;
+	}	
 }

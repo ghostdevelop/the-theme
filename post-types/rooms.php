@@ -51,8 +51,7 @@
 	                'edit_others_posts' => 'edit_posts',
 	                'publish_posts' => 'edit_posts',
 	                'read_private_posts' => 'edit_posts',
-	            ),
-	            'register_meta_box_cb' => array('RoomsPostType', 'add_metabox')               
+	            )      
 	        ));
 	    }
 	    
@@ -79,42 +78,6 @@
 	    
 			return $fields[$fieldblock];
 	    }	    
-	    
-	    static function add_metabox(){
-		    add_meta_box('members-options', __('Szoba adatok'), array('RoomsPostType', 'metabox'), 'room','side');
-	    }
-	    
-	    static function metabox($post){
-		   	// Add an nonce field so we can check for it later.
-			wp_nonce_field( 'post-type-options', 'post-type-options_nonce' );
-						
-			$fieldblocks = self::get_fields();		
-			
-			if (!empty($fieldblocks)){
-				
-				echo '<div class="field-block">';
-				echo '<h2>Alapadatok</h2>';
-				foreach ($fieldblocks['data'] as $key => $field){		
-					echo '<div class="field-holder">';
-					echo '<label>' .$field['label']. '</label>';
-					echo '<input type="' .$field['type']. '" class="admin-meta-input ' .$field['class']. '" name="' .$key. '" value="' .get_post_meta( $post->ID, $key, true ). '" />';			
-					echo "</div>";
-				}
-				echo '</div>';				
-		
-				echo '<div class="field-block">';
-				echo '<h2>Elérhetőségek</h2>';
-				foreach ($fieldblocks['contact'] as $key => $field){		
-					echo '<div class="field-holder">';
-					echo '<label>' .$field['label']. '</label>';
-					echo '<input type="' .$field['type']. '" class="admin-meta-input ' .$field['class']. '" name="' .$key. '" value="' .get_post_meta( $post->ID, $key, true ). '" />';			
-					echo "</div>";
-				}
-				echo '</div>';
-			}
-			
-	    }       
-	    
 	 }
 	 
 	 RoomsPostType::load();

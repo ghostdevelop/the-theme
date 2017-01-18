@@ -7,6 +7,7 @@
 				<img class="logo" src="<?php echo get_option('logo')?>" />
 			</a>
 		</div>
+		<div class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
 		<div class="navigation-holder">
 			<?php 
 				wp_nav_menu( array(
