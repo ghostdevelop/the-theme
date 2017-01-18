@@ -18,11 +18,8 @@
 	cursor: pointer;
 }
 
-.flat-boxes div.caption h3{
-	font-size: 48px;
-}
-
 .flat-boxes div.caption h3 a{
+	font-size: 48px;
 	color: white;
 }
 

@@ -3,10 +3,10 @@
 }
 
 .single-thumb-content > div{
-	background-size: 70%;
+	background-size: auto 100%;
 	background-repeat: no-repeat;
 	display: block;
-	width: 100%;	
+	width: 100%;
 }
 
 .single-thumb-content > div.right{
