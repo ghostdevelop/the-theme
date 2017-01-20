@@ -5,7 +5,7 @@
 		<ul class="slides">
 			<?php while ($slider->have_posts()): $slider->the_post()?>
 				<li>
-					<?php the_post_thumbnail('full')?>
+					<?php the_post_thumbnail('full-slider')?>
 					<div class="caption">
 						<h2><?php the_title()?></h2>
 						<p><?php the_excerpt()?></p>
