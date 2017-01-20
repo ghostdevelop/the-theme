@@ -124,7 +124,7 @@ p{
 /* Absolute Center Spinner */
 #preloader {
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   overflow: show;
   margin: auto;
   top: 0;

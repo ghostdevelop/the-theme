@@ -20,17 +20,6 @@
 				unregister_widget("WP_Widget_Recent_Comments"); 	// Recent Comments Widget
 				//unregister_widget("WP_Widget_RSS");    				// RSS Widget
 				unregister_widget("WP_Widget_Tag_Cloud");	        // Tag Cloud Widget
-				unregister_widget("SiteOrigin_Panels_Widgets_PostLoop");	        // Tag Cloud Widget
-				unregister_widget("SiteOrigin_Panels_Widgets_PostContent");	        // Tag Cloud Widget
-
-							
-				if (class_exists("WebcreativesHeadlineWidget")) register_widget("WebcreativesHeadlineWidget");	      
-				if (class_exists("WebcreativesContactWidget")) register_widget("WebcreativesContactWidget");	      
-				if (class_exists("WebcreativesLoginWidget")) register_widget("WebcreativesLoginWidget");	   
-				//if (class_exists("WebcreativesTag_Cloud")) register_widget("WebcreativesTag_Cloud");	      
-				if (class_exists("WebcreativesPostLoopWidget")) register_widget("WebcreativesPostLoopWidget");
-				if (class_exists("WebcreativesCustomPostWidget")) register_widget("WebcreativesCustomPostWidget");
-				if (class_exists("WebcreatviesChainsWidget")) register_widget("WebcreatviesChainsWidget");	     
 			
 			}	
 			

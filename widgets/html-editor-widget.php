@@ -39,7 +39,7 @@ class WP_Widget_HTML_Text extends WP_Widget {
 			'customize_selective_refresh' => true,
 		);
 		$control_ops = array( 'width' => 400, 'height' => 350 );
-		parent::__construct( 'text', __( 'HTML Text' ), $widget_ops, $control_ops );
+		parent::__construct( 'html-text', __( 'HTML Text' ), $widget_ops, $control_ops );
 	}
 
 	/**
