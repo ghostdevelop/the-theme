@@ -200,7 +200,6 @@ body div.wpcf7 .ajax-loader{
 	font-family: FontAwesome;
 	content: "\f077";
 	display: inline-block;
-	padding-right: 3px;
 	vertical-align: middle;	
 }
 .scrollToTop:hover{
