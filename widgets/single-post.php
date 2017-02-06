@@ -58,6 +58,11 @@ class SinglePostWidget extends WP_Widget {
 					<?php if (isset($instance['disable_link']) && $instance['disable_link'] != false): ?>
 						</a>
 					<?php endif;?>
+					<?php if(!isset($instance['button']) or $instance['button'] == ''):?>
+						<a href="<?php echo (isset($instance['button_url']) ? $instance['button_url'] : get_the_permalink())?>" class="link">
+							<?php _e('Jelentkezem', 'the-theme')?>
+						</a>
+					<?php endif?>
 				<?php endwhile;?>
 			<?php else : ?>
 
@@ -79,6 +84,8 @@ class SinglePostWidget extends WP_Widget {
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
 		$instance['thumbnail'] = ( ! empty( $new_instance['thumbnail'] ) ) ? strip_tags( $new_instance['thumbnail'] ) : '';
 		$instance['excerpt'] = ( ! empty( $new_instance['excerpt'] ) ) ? strip_tags( $new_instance['excerpt'] ) : '';
+		$instance['button'] = ( ! empty( $new_instance['button'] ) ) ? strip_tags( $new_instance['button'] ) : '';
+		$instance['button_url'] = ( ! empty( $new_instance['button_url'] ) ) ? strip_tags( $new_instance['button_url'] ) : '';
 		$instance['disable_link'] = ( ! empty( $new_instance['disable_link'] ) ) ? strip_tags( $new_instance['disable_link'] ) : '';
 		return $instance;
 	}
@@ -93,6 +100,8 @@ class SinglePostWidget extends WP_Widget {
 		'selected_post' => '0',
 		'title' => '',
 		'thumbnail' => '',
+		'button' => '',
+		'button_url' => '',
 		'excerpt' => '',
 		'disable_link' => false
 		);
@@ -128,6 +137,12 @@ class SinglePostWidget extends WP_Widget {
 
 			<label for="<?php echo $this->get_field_id( 'excerpt' ); ?>"><?php _e('Post excerpt:', 'the-theme') ?></label>
 			<input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'excerpt' ); ?>" name="<?php echo $this->get_field_name( 'excerpt' ); ?>" value="excerpt" <?php echo ($instance['excerpt']=='excerpt')?'checked':''; ?> />	
+			
+			<label for="<?php echo $this->get_field_id( 'button' ); ?>"><?php _e('Button:', 'the-theme') ?></label>
+			<input type="checkbox" class="widefat" id="<?php echo $this->get_field_id( 'button' ); ?>" name="<?php echo $this->get_field_name( 'button' ); ?>" value="excerpt" <?php echo ($instance['button']=='button')?'checked':''; ?> />	
+			
+			<label for="<?php echo $this->get_field_id( 'button_url' ); ?>"><?php _e('Button URL:', 'the-theme') ?></label>
+			<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'button_url' ); ?>" name="<?php echo $this->get_field_name( 'button_url' ); ?>" value="<?php echo $instance['button_url'] ?>"/>				
 		</p>
 		
 	<?php

@@ -3,7 +3,7 @@
 	<header>
 	<div class="container">
 		<div class="logo-holder">
-			<a href="<?php echo home_url()?>">
+			<a href="<?php echo (isset($options['logo_link']) ? $options['logo_link'] : home_url())?>">
 				<img class="logo" src="<?php echo get_option('logo')?>" />
 			</a>
 		</div>
