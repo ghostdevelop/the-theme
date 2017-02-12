@@ -15,6 +15,25 @@ jQuery(document).ready(function($){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
 	});	
+	
+	if ($('.widget.collapseable').length){
+		if ($(window).width() <= 768){	
+			$('.widget.collapseable .widget-title').click(function(){
+				$(this).next().slideToggle()
+			})
+		}
+	}		
+
+});
+
+jQuery(window).resize(function($){
+	if ($('.widget.collapseable').length){
+		if ($(window).width() <= 768){	
+			$('.widget.collapseable .widget-title').click(function(){
+				$(this).next().slideToggle()
+			})
+		}
+	}	
 });
 
 wow = new WOW(

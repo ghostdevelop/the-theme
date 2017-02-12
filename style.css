@@ -218,4 +218,30 @@ body div.wpcf7 .ajax-loader{
 		bottom: 50px;
 		right: 10px;
 	}	
+	
+	.widget.collapseable{
+		position: relative;
+	}
+	
+	.widget.collapseable .widget-title hr{
+		margin-bottom: 0;
+	}
+
+	.widget.collapseable .widget-title:after{
+	    content: "\f107";
+	    font-family: FontAwesome;
+	    right: 20px;
+	    font-size: 24px;
+	    color: white;
+	    position:absolute;
+	    top:0;		
+	    transform: translateY(50%)
+	}
+
+	.widget.collapseable div:nth-child(2){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 414px) {
 }

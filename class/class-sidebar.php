@@ -24,41 +24,41 @@
 			}	
 			
 			static function sidebar_setup() {
-				register_sidebar( array(
+				register_sidebar( apply_filters('the_theme_home_sidebar_args', array(
 					'name' => 'Home sidebar',
 					'id' => 'home-sidebar',
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
 					'after_title' 		=> '</h3><hr /></div>',
-				) );	
-							
-				register_sidebar( array(
+				) ) );	
+				
+				register_sidebar( apply_filters('the_theme_left_sidebar_args', array(
+					'name' => 'Left Sidebar',
+					'id' => 'left-sidebar',
+					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
+					'after_widget' 		=> '</div>',
+					'before_title'		=> '<div class="widget-title"><h3>',
+					'after_title' 		=> '</h3><hr /></div>',
+				) ) );	
+				
+				register_sidebar( apply_filters('the_theme_right_sidebar_args', array(
 					'name' => 'Right sidebar',
 					'id' => 'right-sidebar',
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
 					'after_title' 		=> '</h3><hr /></div>',
-				) );		
+				) ) );	
 				
-				register_sidebar( array(
-					'name' => 'Left sidebar',
-					'id' => 'left-sidebar',
-					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
-					'after_widget' 		=> '</div>',
-					'before_title'		=> '<div class="widget-title"><h3>',
-					'after_title' 		=> '</h3><hr /></div>',
-				) );						
-				
-				register_sidebar( array(
+				register_sidebar( apply_filters('the_theme_footer_sidebar_args', array(
 					'name' => 'Footer sidebar',
 					'id' => 'footer-sidebar',
 					'before_widget' 	=> '<div id="%1$s" class="widget %2$s">',
 					'after_widget' 		=> '</div>',
 					'before_title'		=> '<div class="widget-title"><h3>',
 					'after_title' 		=> '</h3><hr /></div>',
-				) );																				
+				) ) );																				
 			}		
 							    				    	    				
 		}
