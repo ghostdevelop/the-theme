@@ -27,18 +27,21 @@ input{
 	margin-bottom: 10px;
 }
 
-.widget ul{
+.widget ul.menu,
+.widget ul.product-categories{
 	margin: 0;
 	list-style: none;
 	padding: 0;
 }
 
-.widget ul li a{
+.widget ul.menu li a,
+.widget ul.product-categories li a{
 	padding: 10px 0;
 	display: block;
 }
 
-.widget ul li a:before{
+.widget ul.menu li a:before,
+.widget ul.product-categories li a:before{
 	font-family: FontAwesome;
 	content: "\f0a4";
 	display: inline-block;

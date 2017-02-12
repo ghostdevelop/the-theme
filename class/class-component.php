@@ -51,14 +51,16 @@
 				$post_types = $parent_post_types;
 				
 				if (is_array($child_post_types)) $post_types = array_merge($parent_post_types, $child_post_types); 
-				   
-				foreach ($post_types as $post_type){
-					$explode = explode("/", $post_type);
-					
-					if (file_exists($child_url . end($explode))){
-						require_once($child_url . end($explode));
-					} else {
-						require_once($parent_url . end($explode));
+				
+				if(!empty($post_types)){   
+					foreach ($post_types as $post_type){
+						$explode = explode("/", $post_type);
+						
+						if (file_exists($child_url . end($explode))){
+							require_once($child_url . end($explode));
+						} else {
+							require_once($parent_url . end($explode));
+						}
 					}
 				}
 		    }
