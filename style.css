@@ -175,6 +175,12 @@ body div.wpcf7 .ajax-loader{
 	height: 30px;
 }
 
+body .contact-page-form div.wpcf7 div.text-fields{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	box-sizing: border-box;	
+}
 
 /******************** CONTACT FORM *****************/
 

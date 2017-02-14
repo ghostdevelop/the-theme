@@ -27,10 +27,10 @@ jQuery(document).ready(function($){
 });
 
 jQuery(window).resize(function($){
-	if ($('.widget.collapseable').length){
-		if ($(window).width() <= 768){	
-			$('.widget.collapseable .widget-title').click(function(){
-				$(this).next().slideToggle()
+	if (jQuery('.widget.collapseable').length){
+		if (jQuery(window).width() <= 768){	
+			jQuery('.widget.collapseable .widget-title').click(function(){
+				jQuery(this).next().slideToggle()
 			})
 		}
 	}	
