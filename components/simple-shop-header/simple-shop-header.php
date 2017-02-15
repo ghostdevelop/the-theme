@@ -1,6 +1,6 @@
 <?php $SimpleShopHeader = new SimpleShopHeader($options)?>
 <div id="<?php echo $SimpleShopHeader->id?>" class="<?php echo $SimpleShopHeader->type?>">
-	<div class="container-fluid" id="header-top">
+	<div id="header-top">
 		<div class="container">
 			<div class="header-search">
 				<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
@@ -19,7 +19,7 @@
 			</div>			
 		</div>
 	</div>
-	<div class="container-fluid" id="header-bottom">
+	<div id="header-bottom">
 		<div class="container">
 			<div class="logo-holder">
 				<a href="<?php echo home_url()?>">
