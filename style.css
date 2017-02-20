@@ -180,7 +180,12 @@ body .contact-page-form div.wpcf7 div.message-field{
 	width: 50%;
 	box-sizing: border-box;
 	padding: 0 1%;
-	float: right;	
+	float: right;
+	height: 225px;
+}
+
+body .contact-page-form div.wpcf7 div.message-field textarea{
+	height: 100%;
 }
 
 body .contact-page-form div.wpcf7 div.text-fields{
