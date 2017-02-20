@@ -192,7 +192,11 @@ body .contact-page-form div.wpcf7 div.text-fields{
 }
 
 body .contact-page-form div.wpcf7 button.btn.wpcf7-submit{
-	width: 50%;
+	width: 48%;
+	border-radius: 0;
+	padding: 10px;
+	margin: 0 1%;
+	box-sizing: border-box;
 	float: left;
 }
 
