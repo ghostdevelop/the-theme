@@ -4,7 +4,7 @@
 	display: block;	
 }
 
-.entry-content img {
+.entry-content img[class^="wp-image"] {
 	margin: 0 0 1.5em 0;
 	max-width: 100%;
 	}

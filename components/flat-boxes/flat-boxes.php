@@ -12,8 +12,7 @@
 	<?php if ($boxes->have_posts()):?>
 		<div class="boxes-holder clearfix">
 			<?php while ($boxes->have_posts()): $boxes->the_post()?>
-				<div class="box col-md-<?php echo (isset($options['col']) ? $options['col'] : "6")?> col-xs-12">
-					<img src="<?php the_post_thumbnail_url()?>" />
+				<div class="box col-md-<?php echo (isset($options['col']) ? $options['col'] : "6")?> col-xs-12" style="background: url(<?php the_post_thumbnail_url()?>)">
 					<div class="caption">
 						<h3><a href="<?php the_permalink()?>"><?php the_title()?></a></h3>
 						<span><?php the_excerpt()?></span>
