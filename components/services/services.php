@@ -9,7 +9,7 @@
 				<a href="<?php the_permalink()?>" class="thumb">
 					<?php the_post_thumbnail((isset($options['thumbnail_size']) ? $options['thumbnail_size'] : 'thumbnail'))?>
 				</a>
-				<?php if (!$options['disable_link'])?>
+				<?php if (!$options['disable_link']):?>
 					<a href="<?php the_permalink()?>" class="item-title">
 						<h5><?php the_title()?></h5>
 					</a>
