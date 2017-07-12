@@ -1,0 +1,225 @@
+.slicknav_menu {
+	display:none;
+}
+
+.slicknav_menu img.logo{
+	display: block;
+	float: left;
+	height: 50px;	
+}
+
+.shop-line-header .sf-menu{
+	display: inline-block;
+	float: right;
+}
+
+.shop-line-header div.logo-holder{
+	display: inline-block;
+	float: left;
+	height: 100px;
+	padding: 10px;	
+	overflow: hidden;	
+}
+
+.shop-line-header div.logo-holder img{
+	width: auto;
+	max-height: 100%;
+	height: auto;
+}
+
+.shop-line-header div.navigation-holder{
+	display: inline-block;
+	float: left;
+	padding: 0 0 0;	
+	margin-left: 40px;
+}
+
+.shop-line-header .header-login{
+	float: right;
+	display: inline-block;	
+}
+
+.shop-line-header .header-login ul{
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+	line-height: 57px;
+}
+
+.shop-line-header .header-login ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+.shop-line-header .header-search{
+	display: inline-block;
+	float: left;
+}
+
+.shop-line-header .header-search form.search-form{
+	padding-top: 5px;
+}
+
+.shop-line-header .header-cart{
+	float: right;
+	list-style: none;
+	position: relative;
+}
+
+.shop-line-header .header-cart .mini_cart_item a{
+	float: left;
+}
+
+.shop-line-header .header-cart .mini_cart_item span{
+	float: none;
+	color: black;
+	display: inline-block;
+}
+
+.shop-line-header .header-cart .mini-cart{
+	transform: scaleY(0);
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;	
+	position: absolute;
+	z-index: 9999;
+	background: white;
+	padding: 20px 40px;
+	display: inline-block;
+	top: 67px;
+	width: 260px;
+	transform-origin:  top;
+	left: 0;
+	border: 1px solid #efefef;
+}
+
+.shop-line-header .header-cart:hover .mini-cart{
+	transform: scaleY(1)
+}
+
+.shop-line-header .header-cart a.cart-contents{
+	padding: 0 40px; 
+	line-height: 57px;
+}
+
+.shop-line-header #header-top{
+	padding: 0;
+}
+
+.shop-line-header div.language-switcher{
+	display: inline-block;
+	float: right;
+	line-height: 60px;
+}
+
+.shop-line-header div.language-switcher ul{
+	list-style: none;
+	margin: 0;
+}
+
+.sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+.sf-menu a {
+	border-left: 1px solid #fff;
+	border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
+	border-top: 1px solid rgba(255,255,255,.5);
+	padding: 20px;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+}
+.sf-menu a {
+	color: #333;
+	text-transform: uppercase;
+}
+
+.sf-menu a {
+	cursor: pointer;	
+}
+
+.sf-menu li {
+	border-right: 1px solid #efefef;
+	background: white;	
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.sf-menu ul li {
+
+}
+.sf-menu ul ul li {
+
+}
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	background: #57b6ff;
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+}
+
+.sf-menu li:hover > a,
+.sf-menu li.sfHover > a{
+	color: #efefef;
+}
+
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	margin-top: -3px;
+	height: 0;
+	width: 0;
+	/* order of following 3 rules important for fallbacks to work */
+	border: 5px solid transparent;
+	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-top-color: #57b6ff;
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-left-color: #57b6ff;
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: white;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	.js .sf-menu {
+		display:none;
+	}
+	
+	.shop-line-header,
+	div.shop-line-header .logo-holder{
+		display: none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}

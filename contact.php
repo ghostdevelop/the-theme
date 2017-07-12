@@ -1,6 +1,6 @@
 <?php /* Template Name: Contact */ ?>
 <?php get_header()?>
-		<?php load_component( array('id' => 1, 'type' => 'simple-shop-header', 'js_options' => array(), 'menu' => 'top-menu', 'search_btn_class' => 'hvr-rectangle-out') ); ?>		
+		<?php load_component( array('id' => 1, 'type' => 'simple-header', 'js_options' => array(), 'menu' => 'top-menu', 'search_btn_class' => 'hvr-rectangle-out') ); ?>		
 		<div class="breadcrumb">
 			<div class="container">
 				<?php if ( function_exists('yoast_breadcrumb') ):?>
@@ -47,5 +47,5 @@
 				<?php dynamic_sidebar('footer-sidebar')?>
 			</div>
 		</sidebar>		
-	<?php load_component( array('id' => 1, 'type' => 'simple-shop-footer', 'menu' => 'footer-menu') ); ?>		
+	<?php load_component( array('id' => 1, 'type' => 'simple-footer', 'menu' => 'footer-menu') ); ?>		
 <?php get_footer()?>

@@ -22,5 +22,5 @@
 		
 	}
 	
-	Members::load_post_types(__FILE__);	
+	SlitSlider::load_post_types(__FILE__);	
 	

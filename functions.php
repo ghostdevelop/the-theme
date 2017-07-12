@@ -26,11 +26,17 @@ if(!class_exists('TheTheme')) {
 				foreach ($widgets as $widget){
 					require_once($widget);
 				}
-			}			
-						
-			TheTheme::load_actions();
+			}	
 			
-			load_theme_textdomain( 'the-theme', get_template_directory() . '/languages' );			
+			$metaboxes = glob(dirname(__FILE__) . '/metaboxes/*.php');
+			
+			if (!empty($metaboxes)){
+				foreach ($metaboxes as $metabox){
+					require_once($metabox);
+				}
+			}					
+						
+			TheTheme::load_actions();		
 				
 		}
 		
@@ -39,10 +45,16 @@ if(!class_exists('TheTheme')) {
 			add_action( 'init', array('TheTheme', 'images_setup' ));				
 			add_action('admin_menu', array('TheTheme', 'create_pages'));		
 			add_action('admin_init', array('TheTheme', 'register_settings') );	
+			add_action( 'after_setup_theme', array('TheTheme', 'theme_setup') );			
+		}
+		
+		static function theme_setup(){
+			load_theme_textdomain( 'the-theme', get_stylesheet_directory() . '/languages' );			
 		}
 		
 		static function navigations_setup(){
 			register_nav_menu( 'top-menu', __( 'Top menu', 'the-theme' ) );			
+			register_nav_menu( 'footer-menu', __( 'Footer menu', 'the-theme' ) );			
 			register_nav_menu( 'registration-menu', __( 'Registration menu', 'the-theme' ) );			
 		}
 		

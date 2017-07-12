@@ -7,7 +7,7 @@
 		<?php while ($services->have_posts()):  $services->the_post();?>
 			<li class="<?php echo (isset($options['li_class']) ? $options['li_class'] : '')?>">
 				<a href="<?php the_permalink()?>" class="thumb">
-					<?php the_post_thumbnail('thumbnail')?>
+					<?php the_post_thumbnail((isset($options['thumbnail_size']) ? $options['thumbnail_size'] : 'thumbnail'))?>
 				</a>
 				<a href="<?php the_permalink()?>" class="item-title">
 					<h5><?php the_title()?></h5>

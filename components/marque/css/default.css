@@ -1,0 +1,22 @@
+.marquee {
+	width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+.marquee a{
+	margin-right: 20px;
+}
+
+/* Make it move */
+@keyframes marquee {
+    from  { text-indent:  100% }
+    to    { text-indent: -100% }
+}

@@ -9,3 +9,21 @@
 	float: left;
 	margin-right: 20px;
 }
+
+
+@media screen and (max-width:414px) {
+	.simple-archive .archive-thumbnail{
+		width: 60%;
+		float: none;
+		margin: 0 auto;
+		display: block;		
+	}
+	
+	.simple-archive .archive-thumbnail img{
+		width: 100%;
+	}	
+	
+	.simple-archive .archive-content h1{
+		font-size: 22px;
+	}
+}

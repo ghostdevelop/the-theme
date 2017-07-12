@@ -257,6 +257,11 @@ body .contact-page-form div.wpcf7 button.btn.wpcf7-submit{
 		position: relative;
 	}
 	
+	.widget.collapseable .widget-title + ul,
+	.widget.collapseable .widget-title + div{
+		display: none;
+	}	
+	
 	.widget.collapseable .widget-title hr{
 		margin-bottom: 0;
 	}
@@ -269,7 +274,6 @@ body .contact-page-form div.wpcf7 button.btn.wpcf7-submit{
 	    color: white;
 	    position:absolute;
 	    top:0;		
-	    transform: translateY(50%)
 	}
 
 	.widget.collapseable div:nth-child(2){

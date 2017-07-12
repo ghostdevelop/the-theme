@@ -1,6 +1,6 @@
 <?php $ArchiveContent = new ArchiveContent($options)?>
 <div id="<?php echo $ArchiveContent->id?>" class="<?php echo $ArchiveContent->type?>">
-	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div id="post-<?php the_ID(); ?>" <?php post_class(isset($options['post_class']) ? $options['post_class'] : ""); ?>>
 		<a href="<?php the_permalink()?>"><h1><?php the_title()?></h1></a>
 		<hr>
 		<?php if (has_post_thumbnail()):?>
