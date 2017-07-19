@@ -13,14 +13,14 @@
 				<?php else: ?>				
 					<?php the_post_thumbnail((isset($options['thumbnail_size']) ? $options['thumbnail_size'] : 'thumbnail'))?>
 				<?php endif?>
-				<?php if (!$options['disable_link']):?>
+				<?php if (!isset($options['disable_link'])):?>
 					<a href="<?php the_permalink()?>" class="item-title">
 						<h5><?php the_title()?></h5>
 					</a>
 				<?php else: ?>
 						<h5><?php the_title()?></h5>
 				<?php endif; ?>
-				<?php if ($options['show_desc']):?>	
+				<?php if (isset($options['show_desc'])):?>	
 					<?php the_excerpt()?>
 				<?php endif; ?>
 			</li>
