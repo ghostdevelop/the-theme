@@ -49,7 +49,7 @@ if(!class_exists('TheTheme')) {
 		}
 		
 		static function theme_setup(){
-			load_theme_textdomain( 'the-theme', get_stylesheet_directory() . '/languages' );			
+			load_theme_textdomain( 'the-theme', get_template_directory() . '/languages' );			
 		}
 		
 		static function navigations_setup(){
