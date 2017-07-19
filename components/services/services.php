@@ -6,7 +6,7 @@
 	<ul class="services-list">
 		<?php while ($services->have_posts()):  $services->the_post();?>
 			<li class="<?php echo (isset($options['li_class']) ? $options['li_class'] : '')?>">
-				<?php if (!$options['disable_link']):?>			
+				<?php if (!isset($options['disable_link'])):?>			
 					<a href="<?php the_permalink()?>" class="thumb">
 						<?php the_post_thumbnail((isset($options['thumbnail_size']) ? $options['thumbnail_size'] : 'thumbnail'))?>
 					</a>
